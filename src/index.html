@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <div x-data="{'name': 'Mihai'}">
+      <h1>Hello <span x-text="name"></span></h1>
+
+      <div x-data="counter" data-start-value="5">
+        <h3>Counter 1</h3>
+        <button @click="decrement">-</button>
+        <span x-text="currentValue"></span>
+        <button @click="increment">+</button>
+        <div>
+          Remaining: 
+          <span x-text="remaining()"></span>
+        </div>
+      </div>
+    </div>
+
+    <div x-data="counter" data-start-value="15">
+      <h3>Counter 2</h3>
+      <button @click="decrement">-</button>
+      <span x-text="currentValue"></span>
+      <button @click="increment">+</button>
+      <div>
+        Remaining: 
+        <span x-text="remaining()"></span>
+      </div>
+    </div>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

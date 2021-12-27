@@ -1,0 +1,22 @@
+{
+  "name": "hello-vite",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mihai Vilcu",
+    "email": "ionutvmi@gmail.com"
+  },
+  "scripts": {
+    "dev": "cross-env JAVA_HOME= vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "sass": "^1.45.1",
+    "vite": "^2.7.2",
+    "vite-plugin-mkcert": "^1.5.2"
+  },
+  "dependencies": {
+    "alpinejs": "^3.7.1"
+  }
+}
